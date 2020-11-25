@@ -1,0 +1,38 @@
+body {
+    background-color: #333333;
+}
+
+.rood {
+    color: #FE2E2E;
+    font-size: 30px;
+}
+
+.geel {
+    color: #FFFF00;
+    font-size: 30px;
+}
+
+.groen {
+    color: #BFFF00;
+    font-size: 30px;
+}
+
+.blauw {
+    color: #2E64FE;
+    font-size: 30px;
+}
+
+.roze {
+    color: #FA58D0;
+    font-size: 30px;
+}
+
+.paars {
+    color: #6A0888;
+    font-size: 30px;
+}
+
+.zwart {
+    color: #000000;
+    font-size: 30px;
+}
