@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Meet the DOM.</title>
+        <script src="extern.js"></script>
+        <script>
+            alert("Here's DOMmy!");
+        </script>
+    </head>
+    <body>
+    <h1>Goodmorning..</h1>    
+    <p id="greet">...</p>
+    <script>
+        document.getElementById('greet').textContent = "Ik ben DOM!";
+    </script>
+    <input type="button" value = "Zoek binnen" onclick="function inline(){
+        document.getElementById('greet').textContent = 'Je hebt binnen gezocht en wat gevonden!';
+    }inline();">
+    </input>
+    <input type="button" value = "Zoek buiten" onclick="clickedMe()"></input>
+    <input type="button" value = "Is DOM dom?" onclick="function inline(){
+        document.title = 'Hoi DOM ik ben niet DOM!';
+    }inline();">
+    <input type="button" id="myButton" value = "Reset Title" onclick="function inline(){
+        document.title = 'Meet the DOM.';
+    }inline();">
+    </body>
+</html>
