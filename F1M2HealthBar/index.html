@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="hpbutton.js">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>OHH SHIT NIGGA, ITS A SPIDER</h1><br>
+        <label for="hpbar">GET THAT MOFO</label>
+        <meter id="hpbar" min="0" max="100" low="30" high="60" optimum="85" value="100"></meter><br>
+        <audio id="sound1" src="boom.mp3"></audio>
+        <img id="butone" src="ohshitaspider.jpg" title="SLAP THAT MF" onclick="getElementById('sound1').pause(); getElementById('sound1').currentTime=0; getElementById('sound1').play()">
+        
+        <script>
+             var basehp = 100;
+            document.getElementById("butone").addEventListener("click",(e)=>{
+                var health = basehp -= 3;
+                document.getElementById("hpbar").setAttribute("value", health);   
+            });      
+        </script>
+    </body>
+</html>
