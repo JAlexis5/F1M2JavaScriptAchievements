@@ -15,11 +15,15 @@ function rollDaDice(){
     console.log("Roll 3:", rollArray[2]);
     console.log("Roll 4:", rollArray[3]);
 
-    // Add everything up
-    var fullRoll = firstRoll + secondRoll + thirdRoll + fourthRoll;
-    console.log("Full Roll:", fullRoll);
+    // Store lowest roll
+    var lowestRoll = Math.min(firstRoll, secondRoll, thirdRoll, fourthRoll);
+    console.log("Lowest Roll:", lowestRoll);
+
+    // Get final roll; all four rolls - lowest roll (highest 3 rolls)
+    var finalRoll = firstRoll + secondRoll + thirdRoll + fourthRoll - lowestRoll;
+    console.log("Full Roll:", finalRoll);
 
     // Display results via HTML
-    document.getElementById("result").innerHTML = "Result: " + fullRoll;
+    document.getElementById("result").innerHTML = "Result: " + finalRoll;
 
 }
