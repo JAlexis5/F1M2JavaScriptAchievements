@@ -11,7 +11,10 @@ let quiz; // object met quiz vragen
 let playerData = {}; // object, hierin worden de game gegevens opgeslagen
 
 function init(){
-    quiz = quiz1; // kies de quiz
+    quizcounter += 1;
+    if (quizcounter = 1) {quiz = quiz1} // kies de quiz
+    else if (quizcounter = 2) {quiz = quiz2};
+
     initQuiz(); // start de quiz
 }
 
@@ -80,7 +83,7 @@ function finishQuiz() {
   quizWrapper.style.background = "silver";
   resultBox.innerHTML = "<h2>Jouw resultaat <br>Goede antwoorden: " + playerData.goodAnswers + "<br>Foute antwoorden: " + playerData.wrongAnswers + "</h2>";
   quiz = quiz2;
-  let counter = 0;
+  counter = 0;
   init();
 }
 

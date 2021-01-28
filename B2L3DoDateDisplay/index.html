@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="dag">...</p>
+    <p id="maand">...</p>
+    <p id="jaar">...</p>
+
+    <script>
+        function toonDatum(){
+        
+        let docDay = document.getElementById('dag');
+        let docMonth = document.getElementById('maand');
+        let docYear = document.getElementById('jaar');
+        date = new Date();
+        day = date.getDate();
+        month = date.getMonth() + 1;
+        year = date.getFullYear();
+
+        console.log("Day: ", day)
+        console.log("Month: ", month)
+        console.log("Year: ", year)
+
+        docDay.innerHTML = day;
+        docMonth.innerHTML = month;
+        docYear.innerHTML = year;
+        }
+
+        window.addEventListener('DOMContentLoaded', toonDatum);
+        
+    </script>
+
+
+
+
+</body>
+</html>

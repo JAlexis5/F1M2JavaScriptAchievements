@@ -24,6 +24,9 @@ function rollDaDice(){
     console.log("Full Roll:", finalRoll);
 
     // Display results via HTML
+    document.getElementById("roll1").innerHTML = "Roll 1: " + rollArray[0];
+    document.getElementById("roll2").innerHTML = "Roll 2: " + rollArray[1];
+    document.getElementById("roll3").innerHTML = "Roll 3: " + rollArray[2];
+    document.getElementById("roll4").innerHTML = "Roll 4: " + rollArray[3];
     document.getElementById("result").innerHTML = "Result: " + finalRoll;
-
 }

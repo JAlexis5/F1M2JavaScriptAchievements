@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="hpbutton.js">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -12,11 +11,9 @@
         <img id="butone" src="ohshitaspider.jpg" title="SLAP THAT MF" onclick="getElementById('sound1').pause(); getElementById('sound1').currentTime=0; getElementById('sound1').play()">
         
         <script>
-             var basehp = 100;
-            document.getElementById("butone").addEventListener("click",(e)=>{
-                var health = basehp -= 3;
-                document.getElementById("hpbar").setAttribute("value", health);   
-            });      
-        </script>
+           document.getElementById("butone").addEventListener("click",(e)=>{
+            document.getElementById('hpbar').value -= 3;
+           });      
+       </script>
     </body>
 </html>
