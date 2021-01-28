@@ -10,10 +10,10 @@
 - `git clone <de url van JOUW Javascript Achivements repository> Javascript-Achievements`
 - Werk in die nieuwe map op je computer aan je Javascript Achievements
 
-In het het bestand  [index.html](index.html) houd je een overzicht bij van wat je hebt gedaan met linkjes naar de opdrachten.
+In het het bestand [index.html](index.html) houd je een overzicht bij van wat je hebt gedaan met linkjes naar de opdrachten.
 **Dit overzicht zet je op je eigen Ma Cloud website en houd je up-to-date!**
 
 Plaats in deze readme een link naar het index bestand op je ma-cloud site.  
-**HIER de link plaatsen**
+31781.hosts1.ma-cloud.nl/F1M2JavaScriptAchievements/
 
 
