@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Quiz</title>
+    <title>JSA Les 5 | Quiz</title>
     <script src = "./quiz1.js"></script>
     <script src = "./quiz2.js"></script>
     <script src="./script.js" defer></script>
@@ -16,6 +16,16 @@
           <ul class="myAnswer" id="myAnswer"></ul>
       </div>
       <div class="resultBox" id="resultBox">Einde Quiz!</div>
+    </div>
+    <div id="quizzes">
+      <h2>Choose Quiz:</h2>
+      <div id="quizbuttons">
+        <button class="quiz1button" onclick="initq1()">Quiz 1</button>
+        <button class="quiz2button" onclick="initq2()">Quiz 2</button>
+      </div>
+    </div>
+    <div id="reload">
+      <button class="rlbutton" onclick="window.location.reload(true)">Reset</button>
     </div>
   </body>
 </html>

@@ -6,16 +6,24 @@ const questionBox = document.getElementById('questionBox');
 const resultBox = document.getElementById('resultBox');
 const quizTitle = document.getElementById('quizTitle');
 
-let counter = 0; // aantal multiple choice vragen
+let counter = 0; // aantal mutliple choice vragen
 let quiz; // object met quiz vragen
 let playerData = {}; // object, hierin worden de game gegevens opgeslagen
+var switchto2 = false;
 
-function init(){
-    quizcounter += 1;
-    if (quizcounter = 1) {quiz = quiz1} // kies de quiz
-    else if (quizcounter = 2) {quiz = quiz2};
-
+function initq1(){
+    quiz = quiz1;
+    document.getElementById('quizzes').style.display = "none";
+    quizWrapper.style.display = "block";
     initQuiz(); // start de quiz
+
+}
+
+function initq2(){
+  quiz = quiz2;
+  document.getElementById('quizzes').style.display = "none";
+  quizWrapper.style.display = "block";
+  initQuiz(); // start de quiz
 }
 
 function initQuiz(){
@@ -81,10 +89,7 @@ function finishQuiz() {
   questionBox.style.display = "none";
   resultBox.style.display = "block";
   quizWrapper.style.background = "silver";
-  resultBox.innerHTML = "<h2>Jouw resultaat <br>Goede antwoorden: " + playerData.goodAnswers + "<br>Foute antwoorden: " + playerData.wrongAnswers + "</h2>";
-  quiz = quiz2;
+  resultBox.innerHTML = "<h2>Jouw resultaat:<br>Vragen goed: " + playerData.goodAnswers + "<br>Vragen fout: " + playerData.wrongAnswers + "</h2>";
+  document.getElementById('quizzes').style.display = "flex";
   counter = 0;
-  init();
-}
-
-init(); // start it
+  }

@@ -4,7 +4,7 @@ const quiz1 =
     "quizMetaData":
     {
         "title": "Hip Hop Quiz",
-        "imageURI": "https://www.lamlisse.nl/wp-content/uploads/2018/03/LAM-Lisse-logo-white.svg"
+        "imageURI": "hiphop.jpg"
 
     },
     "quizContent":		
